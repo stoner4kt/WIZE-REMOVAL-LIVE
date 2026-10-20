@@ -127,7 +127,7 @@
 
   <!-- Preload critical resources -->
   <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="images/truck8.jpg" as="image">
+  <link rel="preload" href="images/truck8.webp" as="image" type="image/webp">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap" as="style">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -141,7 +141,10 @@
   <header class="navbar">
     <div class="container">
       <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="Wize Furniture Removal logo" class="logo-image" width="50" height="50" loading="eager" decoding="async" fetchpriority="high">
+        <picture>
+          <source srcset="images/logo.webp" type="image/webp" />
+          <img src="images/logo.png" alt="Wize Furniture Removal logo" class="logo-image" width="50" height="50" loading="eager" decoding="async" fetchpriority="high">
+        </picture>
         <span>Wize Furniture Removal</span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
@@ -159,7 +162,7 @@
 
   <main id="main-content">
 
-    <section class="hero" style="background-image: linear-gradient(rgba(0,51,102,0.75), rgba(0,51,102,0.75)), url('images/truck8.jpg');" aria-label="Hero banner">
+    <section class="hero" style="background-image: linear-gradient(rgba(0,51,102,0.75), rgba(0,51,102,0.75)), url('images/truck8.webp');" aria-label="Hero banner">
       <div class="container">
         <div class="hero-content" data-animate="fade-up">
           <h1>Furniture Removal Cape Town</h1>
@@ -227,10 +230,22 @@
       <div class="container">
         <h2 class="section-title text-center" id="gallery-heading">Our Fleet in Action</h2>
         <div class="gallery-grid" id="gallery">
-          <img src="images/truck1.jpg" alt="Wize Furniture Removal truck ready for a Cape Town move" class="gallery-img" loading="lazy" decoding="async">
-          <img src="images/truck3.jpg" alt="Wize Removal truck on the road in Western Cape" class="gallery-img" loading="lazy" decoding="async">
-          <img src="images/furniture4.jpg" alt="Furniture carefully prepared and wrapped for safe moving" class="gallery-img" loading="lazy" decoding="async">
-          <img src="images/removal2.jpg" alt="Home furniture removal service in Cape Town" class="gallery-img" loading="lazy" decoding="async">
+          <picture>
+            <source srcset="images/truck1.webp" type="image/webp" />
+            <img src="images/truck1.jpg" alt="Wize Furniture Removal truck ready for a Cape Town move" class="gallery-img" loading="lazy" decoding="async">
+          </picture>
+          <picture>
+            <source srcset="images/truck3.webp" type="image/webp" />
+            <img src="images/truck3.jpg" alt="Wize Removal truck on the road in Western Cape" class="gallery-img" loading="lazy" decoding="async">
+          </picture>
+          <picture>
+            <source srcset="images/furniture4.webp" type="image/webp" />
+            <img src="images/furniture4.jpg" alt="Furniture carefully prepared and wrapped for safe moving" class="gallery-img" loading="lazy" decoding="async">
+          </picture>
+          <picture>
+            <source srcset="images/removal2.webp" type="image/webp" />
+            <img src="images/removal2.jpg" alt="Home furniture removal service in Cape Town" class="gallery-img" loading="lazy" decoding="async">
+          </picture>
         </div>
       </div>
     </section>
